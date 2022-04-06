@@ -1,0 +1,17 @@
+.main{
+    background-color: aliceblue;
+    margin: 25px;
+    width: 750px;
+    max-width: calc(100vw - 50px);
+}
+.mainImage{
+    width: 100%;
+}
+.contain{
+    width: 200px;
+    height: 200px;
+}
+.body{
+    max-width: 400px!important;
+    height: auto;
+}
