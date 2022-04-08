@@ -5,6 +5,7 @@ import logo5 from './logo5.png'
 import logoglow from './logoglow.png'
 import {FaTwitter, FaFacebook, FaInstagram, FaDiscord, FaTelegramPlane, FaBars} from 'react-icons/fa'
 import {RiCloseCircleLine} from 'react-icons/ri'
+import Sidenav from '../sidenav/Sidenav'
 
 export default function Navbar() {
     const side = useRef();
@@ -13,19 +14,21 @@ export default function Navbar() {
     const show = () => {
         menu.current.style.display = 'none';
         close.current.style.display = 'flex';
-        side.current.style.maxHeight = 'calc(90vh - 90px)';
+        side.current.style.maxHeight = 'calc(100vh - 10px)';
+        side.current.style.borderBottom = '1px solid rgba(255, 255, 255, 0.3)';
     }
     const hide = () => {
         menu.current.style.display = 'flex';
         close.current.style.display = 'none';
         side.current.style.maxHeight = '0px';
+        side.current.style.borderBottom = '0px';
     }
   return (
     <div className='text-white h-[90px] flex items-center relative'>
         {/* logo section */}
         <div className='flex items-center basis-[50%] sm:basis-[50%] md:basis-[30%] lg:[25%]'>
             <div className='h-[60px] w-[60px] relative'>
-              <Image src={logoglow} alt='logo' layout='fill' objectFit='contain'/>
+              <Image src={logo5} alt='logo' layout='fill' objectFit='contain'/>
             </div>
             <div>
                 <h2 className='text-[25px] font-[Montserrat] font-semibold'>Infomatics</h2>
@@ -77,7 +80,7 @@ export default function Navbar() {
             <RiCloseCircleLine />
         </div>
         {/* end of menu icon */}
-        <div ref={side} className='w-[70vw] top-[90px] text-white right-[0px] overflow-hidden absolute bg-[#066b57] h-[calc(100vh_-_90px)] md:!hidden transition-[max-height] duration-500 ease-in-out'><p className=''>Sidenav</p></div>
+        <div ref={side} className='w-[70vw] z-[100] top-[90px] text-white right-[0px] overflow-hidden absolute sidenavglass max-h-[0px] h-[100vh] md:!hidden transition-[max-height] duration-500 ease-in-out'><Sidenav /></div>
     </div>
   )
 }

@@ -4,7 +4,7 @@ import foto from './istockphoto.jpg'
 
 export default function About() {
   return (
-    <div className='flex'>
+    <div className='flex flex-col md:flex-row'>
         {/* left section*/}
         <div className='basis-[50%] flex items-center justify-center'>
            <div className='w-[100%] flex flex-col items-center'>
@@ -14,9 +14,9 @@ export default function About() {
            </div>
         </div>
         {/* right section*/}
-        <div className='basis-[50%]'>
-            <div className='h-[500px] w-[500px] relative'>
-                <Image src={foto} alt='foto' layout='fill' objectFit='contain'/>
+        <div className='basis-[50%] order-first md:order-last'>
+            <div className='h-[300px] w-[300px] relative md:h-[300px] md:w-[300px}'>
+                <Image src={foto} alt='foto' layout='responsive' objectFit='contain'/>
             </div>
         </div>
     </div>
