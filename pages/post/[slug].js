@@ -15,7 +15,7 @@ export const Post = ({title, body, image}) =>{
      <div>
          <div className={styles.main}>
            <h1>{title}</h1>
-           <img src={imageUrl} className={styles.mainImage} />
+           {/* <img src={imageUrl} className={styles.mainImage} /> */}
          </div>
      </div>
     

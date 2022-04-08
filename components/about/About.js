@@ -16,7 +16,7 @@ export default function About() {
         {/* right section*/}
         <div className='basis-[50%]'>
             <div className='h-[500px] w-[500px] relative'>
-                <Image src={foto} layout='fill' objectFit='contain'/>
+                <Image src={foto} alt='foto' layout='fill' objectFit='contain'/>
             </div>
         </div>
     </div>

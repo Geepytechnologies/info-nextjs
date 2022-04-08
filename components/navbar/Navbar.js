@@ -50,19 +50,20 @@ export default function Navbar() {
             <div className='w-[70%] p-[5px]'>
             <ul className='flex justify-between pr-[20px]'>
                 <li className='inline hover:text-[#1effe8]'>
-                    <a href='https://twitter.com/infomatics' target='_blank'><FaTwitter /></a>
+                    <a href='https://twitter.com/infomatics' target='_blank' rel='noreferrer'><FaTwitter /></a>
+                </li>
+                
+                <li className='inline hover:text-[#1effe8]'>
+                    <a href='https://telegram.com/infomatics' target='_blank' rel='noreferrer'><FaTelegramPlane /></a>
                 </li>
                 <li className='inline hover:text-[#1effe8]'>
-                    <a href='https://telegram.com/infomatics' target='_blank'><FaTelegramPlane /></a>
+                    <a href='https://facebook.com/infomatics' target='_blank' rel='noreferrer'><FaFacebook /></a>
                 </li>
                 <li className='inline hover:text-[#1effe8]'>
-                    <a href='https://facebook.com/infomatics' target='_blank'><FaFacebook /></a>
+                    <a href='https://instagram.com/infomatics ' target='_blank' rel='noreferrer'><FaInstagram /></a>
                 </li>
                 <li className='inline hover:text-[#1effe8]'>
-                    <a href='https://instagram.com/infomatics' target='_blank'><FaInstagram /></a>
-                </li>
-                <li className='inline hover:text-[#1effe8]'>
-                    <a href='https://instagram.com/infomatics' target='_blank'><FaDiscord /></a>
+                    <a href='https://instagram.com/infomatics' target='_blank' rel='noreferrer'><FaDiscord /></a>
                 </li>
             </ul>
             </div>

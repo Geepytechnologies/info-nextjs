@@ -19,7 +19,7 @@ export const Blogs = ({title, body, image}) =>{
          <div className={styles.main}>
            <h1>{title}</h1>
            <div className={styles.contain}>
-             {imageUrl && <img src={imageUrl} className={styles.mainImage} />}
+             {/* {imageUrl && <img src={imageUrl} className={styles.mainImage} />} */}
            </div>
            <button type='button' onClick={()=> router.push('/post/cryptographic-hash')}>Click me</button>
            <div className={styles.body}>
