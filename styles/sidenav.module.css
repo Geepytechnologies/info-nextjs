@@ -1,0 +1,13 @@
+.side{
+    height: calc(100vh - 90px);
+    width: 70vw;
+    top: 90px;
+    color: white;
+    right: 0px;
+    position: absolute;
+    transition-property: max-height;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    background-color: #066b57;
+    overflow: hidden;
+}
