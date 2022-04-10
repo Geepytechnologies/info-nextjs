@@ -1,22 +1,40 @@
 import React from 'react'
 import {FaTwitter, FaFacebook, FaInstagram, FaDiscord, FaTelegramPlane, FaBars} from 'react-icons/fa'
 import {AiOutlineCopyright} from 'react-icons/ai'
+import {FaBitcoin, } from 'react-icons/fa'
+import { SiBlockchaindotcom } from "react-icons/si";
+import { MdGeneratingTokens } from "react-icons/md";
+import { VscDebug } from "react-icons/vsc";
+import { IoCalendarSharp } from "react-icons/io5";
 
 export default function Sidenav() {
   return (
-    <div>
-        <div>
-            <ul className='flex justify-around flex-col'>
-                <li className='cursor-pointer bg-[#6f2c21] w-[0px] hover:w-[180px] py-[5px] ease-in-out duration-200 rounded-r-lg my-[10px]'>Cryptocurrencies</li>
-                <li className='cursor-pointer bg-[#6f2c21] w-[0px] hover:w-[180px] py-[5px] ease-in-out duration-200 rounded-r-lg my-[10px]'>Blockchain</li>
-                <li className='cursor-pointer bg-[#6f2c21] w-[0px] hover:w-[180px] py-[5px] ease-in-out duration-200 rounded-r-lg my-[10px]'>NFT</li>
-                <li className='cursor-pointer bg-[#6f2c21] w-[0px] hover:w-[180px] py-[5px] ease-in-out duration-200 rounded-r-lg my-[10px]'>Developers</li>
-                <li className='cursor-pointer bg-[#6f2c21] w-[0px] hover:w-[180px] py-[5px] ease-in-out duration-200 rounded-r-lg my-[10px]'>Events</li>
-            </ul>
+    <div className=''>
+        <div className='text-white flex flex-col justify-around w-[100vw]'>
+        <div className='flex flex-row items-center cursor-pointer bg-[#6f2c21] w-[0px] hover:w-[180px] py-[5px] ease-in-out duration-200 rounded-r-lg my-[10px]'>
+            <div className='mr-[5px]'><FaBitcoin style={{fill: 'hsl(34,100%,47%)'}}/></div>
+            <div>Cryptocurrencies</div>
         </div>
+        <div className='flex flex-row items-center cursor-pointer bg-[#6f2c21] w-[0px] hover:w-[180px] py-[5px] ease-in-out duration-200 rounded-r-lg my-[10px]'>
+            <div className='mr-[5px]'><SiBlockchaindotcom style={{fill: 'hsl(34,100%,47%)'}}/></div>
+            <div className=''>Blockchain</div>
+        </div>
+        <div className='flex flex-row items-center cursor-pointer bg-[#6f2c21] w-[0px] hover:w-[180px] py-[5px] ease-in-out duration-200 rounded-r-lg my-[10px]'>
+            <div className='mr-[5px]'><MdGeneratingTokens style={{fill: 'hsl(34,100%,47%)'}}/></div>
+            <div>NFT</div>
+        </div>
+        <div className='flex flex-row items-center cursor-pointer bg-[#6f2c21] w-[0px] hover:w-[180px] py-[5px] ease-in-out duration-200 rounded-r-lg my-[10px]'>
+            <div className='mr-[5px]'><VscDebug style={{fill: 'hsl(34,100%,47%)'}}/></div>
+            <div>Developers</div>
+        </div>
+        <div className='flex flex-row items-center cursor-pointer bg-[#6f2c21] w-[0px] hover:w-[180px] py-[5px] ease-in-out duration-200 rounded-r-lg my-[10px]'>
+            <div className='mr-[5px]'><IoCalendarSharp style={{fill: 'hsl(34,100%,47%)'}}/></div>
+            <div>Events</div>
+        </div>
+    </div>
         <div>
-        <div className='w-[70%] p-[5px]'>
-            <ul className='flex justify-between pr-[20px]'>
+        <div className='w-[100%] p-[5px] flex items-center justify-center'>
+            <ul className='flex justify-around pr-[20px] w-[80%]'>
                 <li className='inline hover:text-[#1effe8]'>
                     <a href='https://twitter.com/infomatics' target='_blank' rel='noreferrer'><FaTwitter /></a>
                 </li>
@@ -36,7 +54,7 @@ export default function Sidenav() {
             </ul>
             </div>
         </div>
-        <div className='flex items-center'><AiOutlineCopyright />Copyright 2022</div>
+        <div className='flex items-center justify-center mt-[10px]'><AiOutlineCopyright style={{paddingRight: '3px'}}/>Copyright 2022</div>
     </div>
   )
 }

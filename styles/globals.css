@@ -18,7 +18,11 @@ a {
 .blog{
   /* From https://css.glass */
 /* background: rgba(255, 255, 255, 0.1); */
-background: rgb(6, 107, 87, 0.3);
+/* background: rgb(6, 107, 87, 0.5); */
+/* background-image: url('../components/blog/blogdesign.jpg'); */
+background-color: #0a131c;
+background-size: cover;
+/* filter: brightness(80%); */
 border-radius: 16px;
 /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); */
 box-shadow: 0 4px 17px rgba(255, 255, 255, 0.5);
@@ -27,7 +31,8 @@ backdrop-filter: blur(7px);
 border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .sidenavglass{
-background: rgb(6, 107, 87, 0.3);
+/* background: rgb(6, 107, 87, 0.3); */
+background: rgb(84, 138, 182, 0.3);
 border-radius: 16px;
 /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); */
 /* box-shadow: 0 4px 17px rgba(255, 255, 255, 0.5); */
@@ -37,6 +42,22 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 border-top: 1px solid rgba(255, 255, 255, 0.3);
 border-left: 1px solid rgba(255, 255, 255, 0.3);
 border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+.dtext:hover ~ .dcol{
+  width: 90%;
+}
+.about{
+  background-image: url('../components/about/fabio.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+.rightsection{
+  background-image: url('../components/about/istockphoto.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; 
+  border-left-width: 1px;
+  border-left-color: #548ab6;
+  
 }
 /* font-family: 'Montserrat', sans-serif; */
 @tailwind base;

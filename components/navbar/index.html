@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <p id="test"></p>
+</body>
+<script>
+   const points = ["1","2","3","4","5","6"];
+   const names = ['obinna', 'abuchi', 'glory', 'victor'];
+   points.push('7');
+   const result = points.sort((a, b)=>{
+       return b - a;
+   });
+   console.log(result)
+
+//    const checkout =  names.filter(filter)
+   /* function reg(value){
+       let pattern = /abuchi/;
+      if(pattern.test(names)){
+          return 
+      }
+   } */
+   const checkout = reg();
+ document.getElementById("test").innerHTML = checkout;
+</script>
+</html>
