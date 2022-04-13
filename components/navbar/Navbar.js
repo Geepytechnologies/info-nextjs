@@ -1,14 +1,14 @@
 import React, {useRef} from 'react'
-import styles from '../../styles/sidenav.module.css'
 import Image from 'next/image'
-import logo5 from './logo5.png'
+import {useRouter} from 'next/router'
+import Link from 'next/link'
 import logo6 from './logo6.png'
-import logoglow from './logoglow.png'
 import {FaTwitter, FaFacebook, FaInstagram, FaDiscord, FaTelegramPlane, FaBars} from 'react-icons/fa'
 import {RiCloseCircleLine} from 'react-icons/ri'
 import Sidenav from '../sidenav/Sidenav'
 
 export default function Navbar() {
+    const router = useRouter();
     const side = useRef();
     const menu = useRef();
     const close = useRef();
@@ -34,7 +34,7 @@ export default function Navbar() {
             <div className='h-[60px] w-[60px] relative'>
               <Image src={logo6} alt='logo' layout='fill' objectFit='contain'/>
             </div>
-            <div>
+            <div onClick={()=> router.push('/')} className='cursor-pointer'>
                 <h2 className='text-[25px] font-[Montserrat] font-semibold'>Infomatics</h2>
             </div>
         </div>
@@ -44,23 +44,23 @@ export default function Navbar() {
             <div className=''>
                 <ul className='flex justify-around'>
                     <div>
-                        <li className='dtext inline  cursor-pointer'>Cryptocurrencies</li>
+                        <li className='dtext inline  cursor-pointer font-[poppins]'><Link href='/cryptocurrencies'><a> Cryptocurrencies</a></Link></li>
                         <div className='dcol mt-[2px] w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                     <div>
-                        <li className='dtext inline cursor-pointer'>Blockchain</li>
+                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/blockchain'><a>Blockchain</a></Link></li>
                         <div className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                     <div>
-                        <li className='dtext inline cursor-pointer'>NFT</li>
+                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/nft'><a>NFT</a></Link></li>
                         <div className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                     <div>
-                        <li className='dtext inline cursor-pointer'>Developers</li>
+                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/developers'><a>Developers</a></Link></li>
                         <div className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                     <div>
-                        <li className='dtext inline cursor-pointer'>Events</li>
+                        <li className='dtext inline cursor-pointer font-[poppins]'><Link href='/events'><a>Events</a></Link></li>
                         <div className='dcol w-[0px] ease-in-out duration-200 h-[3px] rounded-md  bg-[hsl(34,100%,47%)]'></div>
                     </div>
                 </ul>
