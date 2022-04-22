@@ -23,7 +23,7 @@ a {
 background-color: #0a131c;
 background-size: cover;
 /* filter: brightness(80%); */
-border-radius: 16px;
+/* border-radius: 16px; */
 /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); */
 box-shadow: 0 4px 17px rgba(255, 255, 255, 0.5);
 backdrop-filter: blur(7px);
@@ -64,20 +64,27 @@ border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 th, td{
   color: white;
+  padding: 10px;
+  font-family: 'roboto', sans-serif;;
+}
+tr{
+  height: 60px;
+  cursor: pointer;
 }
 .about{
   background-image: url('../components/about/fabio.jpg');
   background-size: cover;
   background-repeat: no-repeat; 
+
 }
 .rightsection{
-  background-image: url('../components/about/istockphoto.jpg');
+  background-image: url('../components/../images/undraw-team.svg');
   background-size: cover;
   background-repeat: no-repeat; 
-  border-left-width: 1px;
-  border-left-color: #548ab6;
-  
+  filter: opacity(0.4);
+ 
 }
+
 /* font-family: 'Montserrat', sans-serif; */
 @tailwind base;
 @tailwind components;

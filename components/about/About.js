@@ -7,9 +7,9 @@ import {UserContext} from '../../Context';
 export default function About() {
   const user = useContext(UserContext);
   return (
-    <div className='flex flex-col md:flex-row h-[300px] md:h-[400px]'>
+    <div className='flex flex-col md:flex-row h-[300px] md:h-[400px] about '>
         {/* left section*/}
-        <div className='basis-[100%] md:basis-[50%] flex items-center justify-center about'>
+        <div className='basis-[100%] md:basis-[50%] flex items-center justify-center'>
            <div className='w-[100%] flex flex-col items-center'>
                <p className='leading-10 text-white text-center font-[roboto] tracking-wide font-semibold text-[20px] p-[10px] break-normal'>Know the Latest about the trending technology, News and Events related to the blockchain and Web3 Industry.</p>
                <p className='text-white font-[poppins]'>Sign up for Our NewsLetters</p>
@@ -18,10 +18,10 @@ export default function About() {
            </div>
         </div>
         {/* right section*/}
-        <div className='hidden sm:flex basis-[50%] rightsection'>
-           {/*  <div className='h-[500px] w-[500px] relative md:h-[500px] md:w-[500px}'>
-                <Image src={foto} alt='foto' layout='responsive' objectFit='contain'/>
-            </div> */}
+        <div className='hidden sm:flex basis-[50%] items-end justify-end'>
+            <div className='h-[auto] w-[50%] md:h-[90%] md:w-[50%} rightsection'>
+                {/* <Image src={foto} alt='foto' layout='responsive' objectFit='contain'/> */}
+            </div>
         </div>
     </div>
   )
