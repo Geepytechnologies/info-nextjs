@@ -61,6 +61,7 @@ export default function Market() {
     const response = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false');
     const data = await response.json();
     // console.log(data);
+    console.log(data[3].name);
     setData(data);
   }  
   useEffect(() => {
@@ -103,8 +104,8 @@ export default function Market() {
         </div>
         <div className='w-[100vw] flex items-center justify-center mt-[40px]'>
         <div className='w-[100%] flex items-center justify-center'>
-          <div className='w-[95vw] py-[10px] border border-[rgba(255,255,255,0.3)] rounded-lg flex items-center justify-center'>
-            <table className='w-[80%] text-white'>
+          <div className='w-[95vw] h-[auto] py-[10px] border border-[rgba(255,255,255,0.3)] rounded-lg flex items-center justify-center'>
+            <table className='text-white w-[100vw] overflow-x-scroll'>
               <thead>
               <tr className=''>
                 <th>Name</th>
@@ -121,14 +122,18 @@ export default function Market() {
                   return (
                     <tr key={item.id} className='border-t border-solid border-[rgba(255,255,255,0.3)]'>
                       <td className=''>
-                        <div className='flex items-center justify-center'>
+                        <div className='flex items-center '>
                           <div className='basis-[30%] flex items-center justify-center'>
-                            <div className='h-[20px] w-[20px] rounded-full relative bg-[white]'>
+                            <div className='h-[20px] w-[20px] rounded-full relative'>
                               <Image src={item.image} layout='fill' objectFit='cover' />
                             </div>
                           </div>
-                          <div className='text-white text-center font-[roboto] basis-[30%]'>{item.symbol.toUpperCase()}</div>
-                          <div className='text-white font-[roboto] basis-[30%]'>{item.name}</div>
+                          <div className='w-[100%]'>
+                          <div className='flex flex-col ml-[20px]'>
+                            <div className='text-white text-center font-[roboto] basis-[30%]'>{item.symbol.toUpperCase()}</div>
+                            <div className='text-white text-center font-[roboto] basis-[30%]'>{item.name}</div>
+                          </div>
+                          </div>
                         </div>
                       </td>
                       <td className='text-center'>{item.current_price}</td>
