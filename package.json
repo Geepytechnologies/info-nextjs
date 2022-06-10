@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.8.3",
     "@mui/x-data-grid": "^5.8.0",
     "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/client": "^3.3.0",
@@ -22,7 +24,8 @@
     "react-owl-carousel": "^2.3.3",
     "react-slick": "^0.28.1",
     "sharp": "^0.30.5",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "uikit": "^3.14.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.4",
