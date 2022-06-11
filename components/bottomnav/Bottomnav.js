@@ -7,7 +7,7 @@ import { IoCalendarSharp } from "react-icons/io5";
 
 export default function Bottomnav() {
   return (
-    <div className='text-white p-[5px] flex justify-around w-[100vw] bg-[black] rounded-t-md z-[999]'>
+    <div className='text-white p-[5px] flex justify-around h-[60px] w-[100vw] bg-[black] rounded-t-md z-[999]'>
         <div className='flex flex-col items-center p-[3px]'>
             <div><FaBitcoin style={{fill: '#548ab6'}}/></div>
             <div>Crypto</div>

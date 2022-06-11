@@ -123,10 +123,10 @@ const moveRight = () => {
             </div>
           </td>
           <td className='text-center'>{item.current_price}</td>
-          <td className='text-center hidden sm:block md:table-cell'>{item.market_cap}</td>
+          <td className='text-center hidden sm:block '>{item.market_cap}</td>
           <td ref={addReveal} className='text-center'>{item.price_change_percentage_24h}  {item.price_change_percentage_24h > 0 ? <>&#65085;</> : <>&#65086; </>}</td>
-          <td className='text-center text-[#46c796] sm:table-cell'>{item.high_24h}</td>
-          <td className='text-center text-[#f15858] sm:table-cell'>{item.low_24h}</td>
+          <td className='text-center text-[#46c796] '>{item.high_24h}</td>
+          <td className='text-center text-[#f15858] '>{item.low_24h}</td>
           <td className='text-center hidden sm:hidden'>{item.total_supply && item.total_supply.toFixed(0)}</td>
       </tr>
     ); 
@@ -153,8 +153,8 @@ const moveRight = () => {
         {/* end of navigation buttons */}
     
         <div className='flex items-center justify-center mt-[10px]'>
-          <div className='w-[90vw] table border-2 border-[rgba(255,255,255,0.3)] rounded-lg'>
-            <table className='text-white w-[90vw] '>
+          <div className='w-[90vw] border-2 border-[rgba(255,255,255,0.3)] rounded-lg overflow-x-auto '>
+            <table className='text-white w-[90vw] table'>
               <thead>
               <tr className='items-center'>
                 <th>Name</th>
@@ -166,7 +166,7 @@ const moveRight = () => {
                 <th className='hidden sm:hidden'>Max Supply</th>
               </tr>
               </thead>
-              <tbody>
+              <tbody className=''>
               {slide === 1 ? data.slice(0, 20).map((item) => {
                   return (
                     <Table item={item} key={item.id} />)

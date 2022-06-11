@@ -37,7 +37,7 @@ export default function NewsSlider(props) {
      }
     ];
     return (
-    <div className='items-center border-white border-2 w-[400px] min-h-[350px] md:w-[300px] md:min-h-[350px] m-[20px] flex flex-col blog'>
+    <div className='items-center border-white border-2 w-[300px] min-h-[350px] md:w-[300px] md:min-h-[350px] m-[20px] flex flex-col blog'>
         {/* blog image */}
         <div className='h-[200px] w-[95%] m-[auto] relative flex-[5] mt-[3px] border-2 border-white'>
         <Image src={data[0].image} alt='blog' layout='fill' objectFit='cover' placeholder='blur' className='brightness-50' />

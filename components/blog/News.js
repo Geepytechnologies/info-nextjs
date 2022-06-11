@@ -26,11 +26,10 @@ export default function News() {
         <span className='text-white ml-[8px] font-[roboto]'>News and Updates</span>
       </div>
       {/* <OwlCarousel items={3}>      */}
-      <div className='m-[20px] mb-[60px] p-[20px]'>
-          <Slider {...settings}>
+      <div className='mb-[60px] flex items-center justify-center'>
+          {/* <Slider {...settings}> */}
            <NewsSlider />
-           <NewsSlider />
-        </Slider>
+        {/* </Slider> */}
       </div>
 
       

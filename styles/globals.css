@@ -53,7 +53,6 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .footer{
   background: #0a131c;
-  ;
 }
 .sidenavglass{
 /* background: rgb(6, 107, 87, 0.3); */
@@ -77,9 +76,9 @@ th, td{
   font-family: 'roboto', sans-serif;
 }
 
-table{
+/* table{
   width: 60%;
-}
+} */
 tr{
   height: 60px;
   cursor: pointer;
