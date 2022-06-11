@@ -35,9 +35,27 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 backdrop-filter: blur(7px);
 -webkit-backdrop-filter: blur(7px);
 }
+.slider{
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+.slider::-webkit-scrollbar{
+   height: 0;
+   width: 0;
+}
 .table{
   /* background-image: url('../components/blog/blogdesign.jpg'); */
   background-color: #0a131c;
+}
+.pattern{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  background-image: url('../components/blog/blogdesign.jpg');
+  background-size: cover;
+  filter: opacity(0.3);
 }
 .blog2{
   /* From https://css.glass */

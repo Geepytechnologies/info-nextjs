@@ -153,7 +153,8 @@ const moveRight = () => {
         {/* end of navigation buttons */}
     
         <div className='flex items-center justify-center mt-[10px]'>
-          <div className='w-[90vw] border-2 border-[rgba(255,255,255,0.3)] rounded-lg overflow-x-auto '>
+          <div className='w-[90vw] relative border-2 border-[rgba(255,255,255,0.3)] rounded-lg overflow-x-auto '>
+              <div className='pattern'></div>
             <table className='text-white w-[90vw] table'>
               <thead>
               <tr className='items-center'>
