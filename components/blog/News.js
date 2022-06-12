@@ -151,18 +151,20 @@ function NewsSlider3() {
 )
 }
 
-
+function Card(){
+  return(
+    <div className='card relative flex flex-col rounded-xl  items-center justify-center min-w-[250px] min-h-[350px] md:w-[300px] md:min-h-[350px] m-[20px]'>
+      {/* <div className='w-[40%] rounded-lg absolute z-[1] top-[5px] left-0 h-[30px] bg-[#0a131c] '></div> */}
+      <div className='relative rounded-t-xl basis-[60%] w-[100%] '>
+      <Image src={data[0].image} alt='blog' layout='fill' objectFit='cover' placeholder='blur' className='brightness-50 rounded-t-xl' />
+      </div>
+      <div className='bg-[white] rounded-b-xl  basis-[40%] w-[100%] '>yeah</div>
+    </div>
+  )
+}
 
 
  export default function News() {
-  const settings = {
-    className: "center",
-      infinite: true,
-      centerPadding: "200px",
-      slidesToShow: 2,
-      speed: 500,
-      autoplay: true,
-  };
   return (
     <div className='mt-[50px] w-[100vw] flex flex-col items-center justify-center'>
       <div className='flex justify-center items-center'>
@@ -170,12 +172,10 @@ function NewsSlider3() {
         <span className='text-white ml-[8px] font-[roboto]'>News and Updates</span>
       </div>
       <div className='slider mb-[60px] overflow-x-auto w-[95%] flex '>
-          {/* <Slider {...settings}> */}
-           <NewsSlider0 />
-           <NewsSlider1 />
-           <NewsSlider2 />
-           <NewsSlider3 />
-        {/* </Slider> */}
+          <Card />
+          <Card />
+          <Card />
+          <Card />
       </div>      
     </div>
   )

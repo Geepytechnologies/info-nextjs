@@ -74,7 +74,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .sidenavglass{
 /* background: rgb(6, 107, 87, 0.3); */
-background: rgb(84, 138, 182, 0.3);
+background: #548ab64d;
 border-radius: 16px;
 /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); */
 /* box-shadow: 0 4px 17px rgba(255, 255, 255, 0.5); */
@@ -84,6 +84,11 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 border-top: 1px solid rgba(255, 255, 255, 0.3);
 border-left: 1px solid rgba(255, 255, 255, 0.3);
 border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card{
+  box-shadow: 1px 2px 5px rgba(255, 255, 255, 0.5);
+  background-color: #f08800;
 }
 .dtext:hover ~ .dcol{
   width: 90%;
