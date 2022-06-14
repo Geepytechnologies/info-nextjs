@@ -153,7 +153,7 @@ function NewsSlider3() {
 
 function Card(){
   return(
-    <div className='card relative flex flex-col rounded-xl  items-center justify-center min-w-[250px] min-h-[350px] md:w-[300px] md:min-h-[350px] m-[20px]'>
+    <div className='relative flex flex-col rounded-xl  items-center justify-center min-w-[250px] min-h-[350px] md:w-[300px] md:min-h-[350px] m-[20px]'>
       {/* <div className='w-[40%] rounded-lg absolute z-[1] top-[5px] left-0 h-[30px] bg-[#0a131c] '></div> */}
       <div className='relative rounded-t-xl basis-[60%] w-[100%] '>
       <Image src={data[0].image} alt='blog' layout='fill' objectFit='cover' placeholder='blur' className='brightness-50 rounded-t-xl' />
